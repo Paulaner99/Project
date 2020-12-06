@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="instruction1">1- In the next 8 pages there are 4 Companies to invest in.</string>
+    <string name="instruction2">2- You should choose in which Companies and how much money you d like to invest.</string>
+    <string name="instruction3">3- Every investment is sold before the next selection (5 years passed).</string>
+    <string name="instruction4">4- You should reach the Highest amount possible...</string>
+    <string name="instruction5">Try to reach Warren!!!</string>
+    <string name="cash">Cash:</string>
+    <string name="perc1">25%</string>
+    <string name="perc2">50%</string>
+    <string name="perc3">75%</string>
+    <string name="perc4">100%</string>
+    <string name="next">next</string>
+
+    <string name="p_walmart">$68,38</string>
+    <string name="ear_walmart">↑ EPS(5y): 102%</string>
+    <string name="pe_walmart">P/E: 56,5</string>
+    <string name="pb_walmart">P/B: 11,8</string>
+    <string name="deq_walmart">Debt/Equity: 1,7</string>
+    <string name="dea_walmart">Debt/Earnings: 8,3</string>
+
+    <string name="p_cisco">$54,89</string>
+    <string name="ear_cisco">↑ EPS(5y): 144%</string>
+    <string name="pe_cisco">P/E: 140,7</string>
+    <string name="pb_cisco">P/B: 14,3</string>
+    <string name="deq_cisco">Debt/Equity: 0,3</string>
+    <string name="dea_cisco">Debt/Earnings: 2,4</string>
+
+    <string name="p_sysco">$19,50</string>
+    <string name="ear_sysco">↑ EPS(5y): 345%</string>
+    <string name="pe_sysco">P/E: 14,1</string>
+    <string name="pb_sysco">P/B: 3,5</string>
+    <string name="deq_sysco">Debt/Equity: 0,6</string>
+    <string name="dea_sysco">Debt/Earnings: 2,3</string>
+
+    <string name="p_exxon">$39,75</string>
+    <string name="ear_exxon">↑ EPS(5y): 173%</string>
+    <string name="pe_exxon">P/E: 7,7</string>
+    <string name="pb_exxon">P/B: 1,9</string>
+    <string name="deq_exxon">Debt/Equity: 0,9</string>
+    <string name="dea_exxon">Debt/Earnings: 4,4</string>
+
+
+</resources>
