@@ -40,7 +40,7 @@ public class Choice2000 extends AppCompatActivity {
                 break;
         }
     }
-
+porco dio
 
 
 }
