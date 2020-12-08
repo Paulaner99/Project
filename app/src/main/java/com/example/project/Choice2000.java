@@ -41,6 +41,5 @@ public class Choice2000 extends AppCompatActivity {
         }
     }
 
-porco
 
 }
