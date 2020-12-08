@@ -31,6 +31,7 @@
             android:layout_weight="1"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:text="@string/initial_cash"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="30sp" />
@@ -141,11 +142,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
+                                android:onClick="onRadioButtonClicked1"
                                 android:text="@string/perc1"/>
                             <RadioButton android:id="@+id/radio_1_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
+                                android:onClick="onRadioButtonClicked1"
                                 android:text="@string/perc3"/>
 
                         </LinearLayout>
@@ -160,11 +163,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
+                                android:onClick="onRadioButtonClicked1"
                                 android:text="@string/perc2"/>
                             <RadioButton android:id="@+id/radio_1_4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
+                                android:onClick="onRadioButtonClicked1"
                                 android:text="@string/perc4"/>
 
                         </LinearLayout>
