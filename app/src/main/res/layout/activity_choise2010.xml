@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blue"
-    tools:context=".Choice2000">
+    tools:context=".Choise2010">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,39 +19,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:text="@string/cash"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <TextView android:id="@+id/cash_value_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="10dp"
             android:text="@string/initial_cash"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:text="$" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/btn"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_gravity="center"
+            android:gravity="right"
             android:textSize="20sp"
             android:textStyle="bold"
             android:onClick="choice2015"

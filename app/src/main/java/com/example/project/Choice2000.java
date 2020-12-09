@@ -17,9 +17,13 @@ public class Choice2000 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice2000);
 
-        cash = (TextView) findViewById(R.id.cash_value_text_view)
+        cash = (TextView) findViewById(R.id.cash_value_text_view);
     }
 
+    public void choice2005(View view) {
+        Intent intent = new Intent(this, Choise2010.class);
+        startActivity(intent);
+    }
 
     public void onRadioButtonClicked1(View view) {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group1);
