@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
-        <activity android:name=".Choice2000"></activity>
+        <activity android:name=".Choise2015"></activity>
+        <activity android:name=".Choise2010" />
+        <activity android:name=".Choice2000" />
         <activity android:name=".Instructions" />
         <activity android:name=".Choice1" />
         <activity android:name=".MainActivity">

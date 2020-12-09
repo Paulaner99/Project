@@ -13,6 +13,8 @@
     <string name="next">next</string>
     <string name="initial_cash">1000000</string>
 
+    //Pagina 2005
+
     <string name="p_walmart">$68,38</string>
     <string name="ear_walmart">↑ EPS(5y): 102%</string>
     <string name="pe_walmart">P/E: 56,5</string>
@@ -40,6 +42,66 @@
     <string name="pb_exxon">P/B: 1,9</string>
     <string name="deq_exxon">Debt/Equity: 0,9</string>
     <string name="dea_exxon">Debt/Earnings: 4,4</string>
+
+    //Pagina 2010
+
+    <string name="p_apple">$7,62</string>
+    <string name="ear_apple">↑ EPS(5y): 800%</string>
+    <string name="pe_apple">P/E: 17,73</string>
+    <string name="pb_apple">P/B: 4,61</string>
+    <string name="deq_apple">Debt/Equity: 0</string>
+    <string name="dea_apple">Debt/Earnings: 0</string>
+
+    <string name="p_amazon">$136,25</string>
+    <string name="ear_amazon">↑ EPS(5y): 201%</string>
+    <string name="pe_amazon">P/E: 65,94</string>
+    <string name="pb_amazon">P/B: 11,36</string>
+    <string name="deq_amazon">Debt/Equity: 0</string>
+    <string name="dea_amazon">Debt/Earnings: 0</string>
+
+    <string name="p_monster">$6,44</string>
+    <string name="ear_monster">↑ EPS(5y): 245%</string>
+    <string name="pe_monster">P/E: 17,46</string>
+    <string name="pb_monster">P/B: 5,79</string>
+    <string name="deq_monster">Debt/Equity: 0</string>
+    <string name="dea_monster">Debt/Earnings: 0</string>
+
+    <string name="p_tractorsupply">$13,30</string>
+    <string name="ear_tractorsupply">↑ EPS(5y): 117%</string>
+    <string name="pe_tractorsupply">P/E: 14,43</string>
+    <string name="pb_tractorsupply">P/B: 2,18</string>
+    <string name="deq_tractorsupply">Debt/Equity: 0</string>
+    <string name="dea_tractorsupply">Debt/Earnings: 0</string>
+
+    //Pagina 2015
+
+    <string name="p_netflix">$62,84</string>
+    <string name="ear_netflix">↑ EPS(5y): 34%</string>
+    <string name="pe_netflix">P/E: 78,71</string>
+    <string name="pb_netflix">P/B: 11,11</string>
+    <string name="deq_netflix">Debt/Equity: 1,26</string>
+    <string name="dea_netflix">Debt/Earnings: 19,7</string>
+
+    <string name="p_mastercard">$28,68</string>
+    <string name="ear_mastercard">↑ EPS(5y): 138%</string>
+    <string name="pe_mastercard">P/E: 26,78</string>
+    <string name="pb_mastercard">P/B: 14,02</string>
+    <string name="deq_mastercard">Debt/Equity: 0,22</string>
+    <string name="dea_mastercard">Debt/Earnings: 0,4</string>
+
+    <string name="p_ford">$15,59</string>
+    <string name="ear_ford">↑ EPS(5y): 33%</string>
+    <string name="pe_ford">P/E: 3,97</string>
+    <string name="pb_ford">P/B: 1,83</string>
+    <string name="deq_ford">Debt/Equity: 4,87</string>
+    <string name="dea_ford">Debt/Earnings: 16,1</string>
+
+    <string name="p_fedex">$173,78</string>
+    <string name="ear_fedex">↑ EPS(5y): 156%</string>
+    <string name="pe_fedex">P/E: 18,67</string>
+    <string name="pb_fedex">P/B: 3,04</string>
+    <string name="deq_fedex">Debt/Equity: 0,30</string>
+    <string name="dea_fedex">Debt/Earnings: 3,9</string>
 
 
 </resources>
