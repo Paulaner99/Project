@@ -18,5 +18,5 @@ public class Choice1 extends AppCompatActivity {
         Intent intent = new Intent(this, Choice1.class);
         startActivity(intent);
     }
-    Prova Giulia
+    Super Alpaco Giuliotti
 }
