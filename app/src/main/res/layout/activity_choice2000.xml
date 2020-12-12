@@ -272,11 +272,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc1"/>
                         <RadioButton android:id="@+id/radio_2_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc3"/>
 
                     </LinearLayout>
@@ -291,11 +293,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc2"/>
                         <RadioButton android:id="@+id/radio_2_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc4"/>
 
                     </LinearLayout>
@@ -386,11 +390,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc1"/>
                         <RadioButton android:id="@+id/radio_3_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc3"/>
 
                     </LinearLayout>
@@ -405,11 +411,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc2"/>
                         <RadioButton android:id="@+id/radio_3_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc4"/>
 
                     </LinearLayout>
@@ -500,11 +508,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc1"/>
                         <RadioButton android:id="@+id/radio_4_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc3"/>
 
                     </LinearLayout>
@@ -519,11 +529,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc2"/>
                         <RadioButton android:id="@+id/radio_4_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc4"/>
 
                     </LinearLayout>
