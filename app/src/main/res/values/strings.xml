@@ -6,6 +6,7 @@
     <string name="instruction4">4- You should reach the Highest amount possible...</string>
     <string name="instruction5">Try to reach Warren!!!</string>
     <string name="cash">Cash:</string>
+    <string name="perc0">0%</string>
     <string name="perc1">25%</string>
     <string name="perc2">50%</string>
     <string name="perc3">75%</string>
