@@ -5,13 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Choice2000 extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "com.example.project.MESSAGE";
     private TextView text_cash;
-    float guadagno= (float) 0.0,cash;
+    double guadagno = 0.0;
+    double cash;
+    double value_cash;
+    RadioGroup radioGroup1;
+    RadioButton radioPerc_button;
+    Button btnDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,58 +28,56 @@ public class Choice2000 extends AppCompatActivity {
         setContentView(R.layout.activity_choice2000);
 
         text_cash = (TextView) findViewById(R.id.cash_value_text_view);
+        value_cash = Float.parseFloat(text_cash.getText().toString());
+        cash = value_cash;
+
     }
+
 
     public void choice2005(View view) {
         Intent intent = new Intent(this, Choise2010.class);
         startActivity(intent);
+
+        intent.putExtra(EXTRA_MESSAGE, String.valueOf(guadagno + cash));
+
     }
 
 
     public void onRadioButtonClicked1(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group1);
-        float value_cash=Float.parseFloat(text_cash.getText().toString());
-        float guadagno1= (float) 0.0;
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
 
-        int id = radioGroup.getCheckedRadioButtonId();
-        switch(id) {
+        // Check which radio button was clicked
+        switch(view.getId()) {
             case R.id.radio_1_1:
-                // 25%
-            {
-                guadagno1= (float) (value_cash*0.191575);
-                cash= (float) (value_cash-(value_cash*0.25));
-            }
-
-            break;
+                if (checked)
+                    // 25%
+                    guadagno = guadagno + value_cash * 0.25 * (1 - 0.2337);
+                    cash = cash - value_cash * 0.25;
+                    break;
             case R.id.radio_1_2:
-                // 50%
-            {
-                guadagno1= (float) (value_cash*0.38315);
-                cash= (float) (value_cash-(value_cash*0.5));
-            }
-
-            break;
+                if (checked)
+                    // 50%
+                    guadagno = guadagno + value_cash * 0.5 * (1 - 0.2337);
+                    cash = cash - value_cash * 0.5;
+                    break;
             case R.id.radio_1_3:
-                // 75%
-            {
-                guadagno1= (float) (value_cash*0.574725);
-                cash= (float) (value_cash-(value_cash*0.75));
-            }
-
-            break;
+                if (checked)
+                    // 75%
+                    guadagno = guadagno + value_cash * 0.75 * (1 - 0.2337);
+                    cash = cash - value_cash * 0.75;
+                    break;
             case R.id.radio_1_4:
-                // 100%
-            {
-                guadagno1= (float) (value_cash*0.7663);
-                cash= (float) (value_cash-value_cash);
-            }
-
-            break;
-            default:
-
+                if (checked)
+                    // 100%
+                    guadagno = guadagno + value_cash * 1 * (1 - 0.2337);
+                    cash = cash - value_cash * 1;
+                    break;
         }
-        guadagno=guadagno+guadagno1;
     }
+
+
+
     public void onRadioButtonClicked2(View view) {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group1);
         float value_cash=Float.parseFloat(text_cash.getText().toString());
