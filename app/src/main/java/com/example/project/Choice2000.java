@@ -40,7 +40,7 @@ public class Choice2000 extends AppCompatActivity {
         double sum = 0.0;
 
         sum = guadagno + cash;
-        Intent intent = new Intent(this, Choise2010.class);
+        Intent intent = new Intent(this, Choice2005.class);
         intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
         startActivity(intent);
 

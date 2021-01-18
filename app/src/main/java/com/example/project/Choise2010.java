@@ -24,7 +24,7 @@ public class Choise2010 extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String cash2010 = intent.getStringExtra(Choice2000.EXTRA_MESSAGE);
+        String cash2010 = intent.getStringExtra(Choice2005.EXTRA_MESSAGE);
 
         TextView text_cash = findViewById(R.id.cash_value_2010);
         text_cash.setText(cash2010);
