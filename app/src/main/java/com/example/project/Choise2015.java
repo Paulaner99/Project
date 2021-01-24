@@ -47,31 +47,31 @@ public class Choise2015 extends AppCompatActivity {
             case R.id.radio_1_0:
                 if (checked)
                     // 0%
-                    guadagno = guadagno + value_cash * 0 * (1 + 2.6207);
+                    guadagno = guadagno + value_cash * 0 * (1 + 3.5738);
                 cash = cash - value_cash * 0;
                 break;
             case R.id.radio_1_1:
                 if (checked)
                     // 25%
-                    guadagno = guadagno + value_cash * 0.25 * (1 + 2.6207);
+                    guadagno = guadagno + value_cash * 0.25 * (1 + 3.5738);
                 cash = cash - value_cash * 0.25;
                 break;
             case R.id.radio_1_2:
                 if (checked)
                     // 50%
-                    guadagno = guadagno + value_cash * 0.5 * (1 + 2.6207);
+                    guadagno = guadagno + value_cash * 0.5 * (1 + 3.5738);
                 cash = cash - value_cash * 0.5;
                 break;
             case R.id.radio_1_3:
                 if (checked)
                     // 75%
-                    guadagno = guadagno + value_cash * 0.75 * (1 + 2.6207);
+                    guadagno = guadagno + value_cash * 0.75 * (1 + 3.5738);
                 cash = cash - value_cash * 0.75;
                 break;
             case R.id.radio_1_4:
                 if (checked)
                     // 100%
-                    guadagno = guadagno + value_cash * 1 * (1 + 2.6207);
+                    guadagno = guadagno + value_cash * 1 * (1 + 3.5738);
                 cash = cash - value_cash * 1;
                 break;
         }
@@ -88,31 +88,31 @@ public class Choise2015 extends AppCompatActivity {
             case R.id.radio_2_0:
                 if (checked)
                     // 0%
-                    guadagno = guadagno + value_cash * 0 * (1 + 1.2778);
+                    guadagno = guadagno + value_cash * 0 * (1 + 2.4447);
                 cash = cash - value_cash * 0;
                 break;
             case R.id.radio_2_1:
                 if (checked)
                     // 25%
-                    guadagno = guadagno + value_cash * 0.25 * (1 + 1.2778);
+                    guadagno = guadagno + value_cash * 0.25 * (1 + 2.4447);
                 cash = cash - value_cash * 0.25;
                 break;
             case R.id.radio_2_2:
                 if (checked)
                     // 50%
-                    guadagno = guadagno + value_cash * 0.5 * (1 + 1.2778);
+                    guadagno = guadagno + value_cash * 0.5 * (1 + 2.4447);
                 cash = cash - value_cash * 0.5;
                 break;
             case R.id.radio_2_3:
                 if (checked)
                     // 75%
-                    guadagno = guadagno + value_cash * 0.75 * (1 + 1.2778);
+                    guadagno = guadagno + value_cash * 0.75 * (1 + 2.4447);
                 cash = cash - value_cash * 0.75;
                 break;
             case R.id.radio_2_4:
                 if (checked)
                     // 100%
-                    guadagno = guadagno + value_cash * 1 * (1 + 1.2778);
+                    guadagno = guadagno + value_cash * 1 * (1 + 2.4447);
                 cash = cash - value_cash * 1;
                 break;
         }
@@ -127,31 +127,31 @@ public class Choise2015 extends AppCompatActivity {
             case R.id.radio_3_0:
                 if (checked)
                     // 0%
-                    guadagno = guadagno + value_cash * 0 * (1 + 4.6087);
+                    guadagno = guadagno + value_cash * 0 * (1 - 0.4035);
                 cash = cash - value_cash * 0;
                 break;
             case R.id.radio_3_1:
                 if (checked)
                     // 25%
-                    guadagno = guadagno + value_cash * 0.25 * (1 + 4.6087);
+                    guadagno = guadagno + value_cash * 0.25 * (1 - 0.4035);
                 cash = cash - value_cash * 0.25;
                 break;
             case R.id.radio_3_2:
                 if (checked)
                     // 50%
-                    guadagno = guadagno + value_cash * 0.5 * (1 + 4.6087);
+                    guadagno = guadagno + value_cash * 0.5 * (1 - 0.4035);
                 cash = cash - value_cash * 0.5;
                 break;
             case R.id.radio_3_3:
                 if (checked)
                     // 75%
-                    guadagno = guadagno + value_cash * 0.75 * (1 + 4.6087);
+                    guadagno = guadagno + value_cash * 0.75 * (1 - 0.4035);
                 cash = cash - value_cash * 0.75;
                 break;
             case R.id.radio_3_4:
                 if (checked)
                     // 100%
-                    guadagno = guadagno + value_cash * 1 * (1 + 4.6087);
+                    guadagno = guadagno + value_cash * 1 * (1 - 0.4035);
                 cash = cash - value_cash * 1;
                 break;
         }
@@ -166,31 +166,31 @@ public class Choise2015 extends AppCompatActivity {
             case R.id.radio_4_0:
                 if (checked)
                     // 0%
-                    guadagno = guadagno + value_cash * 0 * (1 + 4.9263);
+                    guadagno = guadagno + value_cash * 0 * (1 - 0.1299);
                 cash = cash - value_cash * 0;
                 break;
             case R.id.radio_4_1:
                 if (checked)
                     // 25%
-                    guadagno = guadagno + value_cash * 0.25 * (1 + 4.9263);
+                    guadagno = guadagno + value_cash * 0.25 * (1 - 0.1299);
                 cash = cash - value_cash * 0.25;
                 break;
             case R.id.radio_4_2:
                 if (checked)
                     // 50%
-                    guadagno = guadagno + value_cash * 0.5 * (1 + 4.9263);
+                    guadagno = guadagno + value_cash * 0.5 * (1 - 0.1299);
                 cash = cash - value_cash * 0.5;
                 break;
             case R.id.radio_4_3:
                 if (checked)
                     // 75%
-                    guadagno = guadagno + value_cash * 0.75 * (1 + 4.9263);
+                    guadagno = guadagno + value_cash * 0.75 * (1 - 0.1299);
                 cash = cash - value_cash * 0.75;
                 break;
             case R.id.radio_4_4:
                 if (checked)
                     // 100%
-                    guadagno = guadagno + value_cash * 1 * (1 + 4.9263);
+                    guadagno = guadagno + value_cash * 1 * (1 - 0.1299);
                 cash = cash - value_cash * 1;
                 break;
         }
