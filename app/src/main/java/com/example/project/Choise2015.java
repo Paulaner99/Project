@@ -38,6 +38,16 @@ public class Choise2015 extends AppCompatActivity {
         guadagno = 0.0f;
     }
 
+    public void Risultato(View view) {
+        float sum = 0.0f;
+
+        sum = guadagno + cash;
+        Intent intent = new Intent(this, Risultato.class);
+        intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
+        startActivity(intent);
+
+    }
+
     public void onRadioButtonClicked1(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();

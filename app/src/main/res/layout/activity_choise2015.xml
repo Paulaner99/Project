@@ -62,7 +62,7 @@
                 android:gravity="right"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:onClick="FINISH"
+                android:onClick="Risultato"
                 android:text="@string/next" />
 
         </LinearLayout>
