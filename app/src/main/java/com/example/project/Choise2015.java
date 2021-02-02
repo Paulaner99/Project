@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Choise2015 extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class Choise2015 extends AppCompatActivity {
     float guadagno;
     float cash;
     float value_cash;
+    int percentuale = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +44,23 @@ public class Choise2015 extends AppCompatActivity {
         float sum = 0.0f;
 
         sum = guadagno + cash;
-        Intent intent = new Intent(this, Risultato.class);
-        intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
-        startActivity(intent);
+        if(percentuale > 100)
+        {
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
+            CharSequence text = "Investi al massimo il 100%";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
+        }
+        else
+        {
+            Intent intent = new Intent(this, Risultato.class);
+            intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
+            startActivity(intent);
+        }
+
 
     }
 
@@ -58,32 +74,37 @@ public class Choise2015 extends AppCompatActivity {
                 if (checked)
                     // 0%
                     guadagno = (float) (guadagno + value_cash * 0 * (1 + 3.5738));
-                cash = (float) (cash - value_cash * 0);
-                break;
+                    cash = (float) (cash - value_cash * 0);
+                    percentuale = percentuale + 0;
+                    break;
             case R.id.radio_1_1:
                 if (checked)
                     // 25%
                     guadagno = (float) (guadagno + value_cash * 0.25 * (1 + 3.5738));
-                cash = (float) (cash - value_cash * 0.25);
-                break;
+                    cash = (float) (cash - value_cash * 0.25);
+                    percentuale = percentuale + 25;
+                    break;
             case R.id.radio_1_2:
                 if (checked)
                     // 50%
                     guadagno = (float) (guadagno + value_cash * 0.5 * (1 + 3.5738));
-                cash = (float) (cash - value_cash * 0.5);
-                break;
+                    cash = (float) (cash - value_cash * 0.5);
+                    percentuale = percentuale + 50;
+                    break;
             case R.id.radio_1_3:
                 if (checked)
                     // 75%
                     guadagno = (float) (guadagno + value_cash * 0.75 * (1 + 3.5738));
-                cash = (float) (cash - value_cash * 0.75);
-                break;
+                    cash = (float) (cash - value_cash * 0.75);
+                    percentuale = percentuale + 75;
+                    break;
             case R.id.radio_1_4:
                 if (checked)
                     // 100%
                     guadagno = (float) (guadagno + value_cash * 1 * (1 + 3.5738));
-                cash = (float) (cash - value_cash * 1);
-                break;
+                    cash = (float) (cash - value_cash * 1);
+                    percentuale = percentuale + 100;
+                    break;
         }
     }
 
@@ -99,32 +120,37 @@ public class Choise2015 extends AppCompatActivity {
                 if (checked)
                     // 0%
                     guadagno = (float) (guadagno + value_cash * 0 * (1 + 2.4447));
-                cash = (float) (cash - value_cash * 0);
-                break;
+                    cash = (float) (cash - value_cash * 0);
+                    percentuale = percentuale + 0;
+                    break;
             case R.id.radio_2_1:
                 if (checked)
                     // 25%
                     guadagno = (float) (guadagno + value_cash * 0.25 * (1 + 2.4447));
-                cash = (float) (cash - value_cash * 0.25);
-                break;
+                    cash = (float) (cash - value_cash * 0.25);
+                    percentuale = percentuale + 25;
+                    break;
             case R.id.radio_2_2:
                 if (checked)
                     // 50%
                     guadagno = (float) (guadagno + value_cash * 0.5 * (1 + 2.4447));
-                cash = (float) (cash - value_cash * 0.5);
-                break;
+                    cash = (float) (cash - value_cash * 0.5);
+                    percentuale = percentuale + 50;
+                    break;
             case R.id.radio_2_3:
                 if (checked)
                     // 75%
                     guadagno = (float) (guadagno + value_cash * 0.75 * (1 + 2.4447));
-                cash = (float) (cash - value_cash * 0.75);
-                break;
+                    cash = (float) (cash - value_cash * 0.75);
+                    percentuale = percentuale + 75;
+                    break;
             case R.id.radio_2_4:
                 if (checked)
                     // 100%
                     guadagno = (float) (guadagno + value_cash * 1 * (1 + 2.4447));
-                cash = (float) (cash - value_cash * 1);
-                break;
+                    cash = (float) (cash - value_cash * 1);
+                    percentuale = percentuale + 100;
+                    break;
         }
     }
 
@@ -138,32 +164,37 @@ public class Choise2015 extends AppCompatActivity {
                 if (checked)
                     // 0%
                     guadagno = (float) (guadagno + value_cash * 0 * (1 - 0.4035));
-                cash = (float) (cash - value_cash * 0);
-                break;
+                    cash = (float) (cash - value_cash * 0);
+                    percentuale = percentuale + 0;
+                    break;
             case R.id.radio_3_1:
                 if (checked)
                     // 25%
                     guadagno = (float) (guadagno + value_cash * 0.25 * (1 - 0.4035));
-                cash = (float) (cash - value_cash * 0.25);
-                break;
+                    cash = (float) (cash - value_cash * 0.25);
+                    percentuale = percentuale + 25;
+                    break;
             case R.id.radio_3_2:
                 if (checked)
                     // 50%
                     guadagno = (float) (guadagno + value_cash * 0.5 * (1 - 0.4035));
-                cash = (float) (cash - value_cash * 0.5);
-                break;
+                    cash = (float) (cash - value_cash * 0.5);
+                    percentuale = percentuale + 50;
+                    break;
             case R.id.radio_3_3:
                 if (checked)
                     // 75%
                     guadagno = (float) (guadagno + value_cash * 0.75 * (1 - 0.4035));
-                cash = (float) (cash - value_cash * 0.75);
-                break;
+                    cash = (float) (cash - value_cash * 0.75);
+                    percentuale = percentuale + 75;
+                    break;
             case R.id.radio_3_4:
                 if (checked)
                     // 100%
                     guadagno = (float) (guadagno + value_cash * 1 * (1 - 0.4035));
-                cash = (float) (cash - value_cash * 1);
-                break;
+                    cash = (float) (cash - value_cash * 1);
+                    percentuale = percentuale + 100;
+                    break;
         }
     }
 
@@ -177,32 +208,37 @@ public class Choise2015 extends AppCompatActivity {
                 if (checked)
                     // 0%
                     guadagno = (float) (guadagno + value_cash * 0 * (1 - 0.1299));
-                cash = (float) (cash - value_cash * 0);
-                break;
+                    cash = (float) (cash - value_cash * 0);
+                    percentuale = percentuale + 0;
+                    break;
             case R.id.radio_4_1:
                 if (checked)
                     // 25%
                     guadagno = (float) (guadagno + value_cash * 0.25 * (1 - 0.1299));
-                cash = (float) (cash - value_cash * 0.25);
-                break;
+                    cash = (float) (cash - value_cash * 0.25);
+                    percentuale = percentuale + 25;
+                    break;
             case R.id.radio_4_2:
                 if (checked)
                     // 50%
                     guadagno = (float) (guadagno + value_cash * 0.5 * (1 - 0.1299));
-                cash = (float) (cash - value_cash * 0.5);
-                break;
+                    cash = (float) (cash - value_cash * 0.5);
+                    percentuale = percentuale + 50;
+                    break;
             case R.id.radio_4_3:
                 if (checked)
                     // 75%
                     guadagno = (float) (guadagno + value_cash * 0.75 * (1 - 0.1299));
-                cash = (float) (cash - value_cash * 0.75);
-                break;
+                    cash = (float) (cash - value_cash * 0.75);
+                    percentuale = percentuale + 75;
+                    break;
             case R.id.radio_4_4:
                 if (checked)
                     // 100%
                     guadagno = (float) (guadagno + value_cash * 1 * (1 - 0.1299));
-                cash = (float) (cash - value_cash * 1);
-                break;
+                    cash = (float) (cash - value_cash * 1);
+                    percentuale = percentuale + 100;
+                    break;
         }
     }
 
