@@ -17,6 +17,8 @@
     <string name="perc4">100%</string>
     <string name="next">next</string>
     <string name="initial_cash">100000</string>
+    <string name="win">You Beat Buffett</string>
+    <string name="lose">Buffett Beat You</string>
 
     //Pagina 2000
 
