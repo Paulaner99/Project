@@ -23,7 +23,7 @@ public class Choice2000 extends AppCompatActivity {
     float value_cash;
     float g1, g2, g3, g4;
     float c1, c2, c3, c4;
-    int p1, p2, p3, p4;
+    int p1, p2, p3,p4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class Choice2000 extends AppCompatActivity {
         setContentView(R.layout.activity_choice2000);
 
         text_cash = (TextView) findViewById(R.id.cash_value_text_view);
-        radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1);
-        radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2);
-        radioGroup3 = (RadioGroup) findViewById(R.id.radio_group3);
-        radioGroup4 = (RadioGroup) findViewById(R.id.radio_group4);
+        radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1_2000);
+        radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2_2000);
+        radioGroup3 = (RadioGroup) findViewById(R.id.radio_group3_2000);
+        radioGroup4 = (RadioGroup) findViewById(R.id.radio_group4_2000);
         value_cash = Float.parseFloat(text_cash.getText().toString());
         cash = value_cash;
         guadagno = 0.0f;
@@ -50,9 +50,6 @@ public class Choice2000 extends AppCompatActivity {
         sum = guadagno + cash;
         if(percentuale > 100)
         {
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
             CharSequence text = "Investi al massimo il 100%";
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(this, text, duration);
@@ -64,7 +61,6 @@ public class Choice2000 extends AppCompatActivity {
             intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
             startActivity(intent);
         }
-
     }
 
 

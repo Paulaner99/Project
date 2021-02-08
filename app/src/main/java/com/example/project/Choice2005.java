@@ -52,9 +52,6 @@ public class Choice2005 extends AppCompatActivity {
         sum = guadagno + cash;
         if(percentuale > 100)
         {
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
             CharSequence text = "Investi al massimo il 100%";
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(this, text, duration);

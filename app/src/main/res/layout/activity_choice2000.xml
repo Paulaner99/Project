@@ -163,7 +163,7 @@
                         android:textSize="15sp" />
 
 
-                        <RadioGroup android:id="@+id/radio_group1"
+                        <RadioGroup android:id="@+id/radio_group1_2000"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -272,7 +272,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group2"
+                    <RadioGroup android:id="@+id/radio_group2_2000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -284,7 +284,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_2_1"
                             android:layout_width="wrap_content"
@@ -380,7 +380,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group3"
+                    <RadioGroup android:id="@+id/radio_group3_2000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -392,7 +392,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_3_1"
                             android:layout_width="wrap_content"
@@ -488,7 +488,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group4"
+                    <RadioGroup android:id="@+id/radio_group4_2000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -500,7 +500,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_4_1"
                             android:layout_width="wrap_content"

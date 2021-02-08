@@ -280,7 +280,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked2"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_2_1"
                             android:layout_width="wrap_content"
@@ -387,7 +387,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked3"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_3_1"
                             android:layout_width="wrap_content"
@@ -494,7 +494,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="14sp"
                             android:checked="true"
-                            android:onClick="onRadioButtonClicked1"
+                            android:onClick="onRadioButtonClicked4"
                             android:text="@string/perc0"/>
                         <RadioButton android:id="@+id/radio_4_1"
                             android:layout_width="wrap_content"
