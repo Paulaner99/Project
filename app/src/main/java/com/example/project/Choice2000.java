@@ -31,10 +31,10 @@ public class Choice2000 extends AppCompatActivity {
         setContentView(R.layout.activity_choice2000);
 
         text_cash = (TextView) findViewById(R.id.cash_value_text_view);
-        radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1_2000);
-        radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2_2000);
-        radioGroup3 = (RadioGroup) findViewById(R.id.radio_group3_2000);
-        radioGroup4 = (RadioGroup) findViewById(R.id.radio_group4_2000);
+        radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1);
+        radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2);
+        radioGroup3 = (RadioGroup) findViewById(R.id.radio_group3);
+        radioGroup4 = (RadioGroup) findViewById(R.id.radio_group4);
         value_cash = Float.parseFloat(text_cash.getText().toString());
         cash = value_cash;
         guadagno = 0.0f;

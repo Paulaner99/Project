@@ -163,7 +163,7 @@
                         android:textSize="15sp" />
 
 
-                        <RadioGroup android:id="@+id/radio_group1_2000"
+                        <RadioGroup android:id="@+id/radio_group1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -272,7 +272,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group2_2000"
+                    <RadioGroup android:id="@+id/radio_group2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -380,7 +380,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group3_2000"
+                    <RadioGroup android:id="@+id/radio_group3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -488,7 +488,7 @@
                         android:textSize="15sp" />
 
 
-                    <RadioGroup android:id="@+id/radio_group4_2000"
+                    <RadioGroup android:id="@+id/radio_group4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
