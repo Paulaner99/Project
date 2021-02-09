@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:layout_marginTop="30dp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -37,7 +37,7 @@
             android:id="@+id/cash_value_finale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:textColor="@color/white"
             android:gravity="center"
             android:text="0"/>
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:textColor="@color/white"
             android:gravity="left"
             android:text=" $"/>
@@ -62,33 +62,43 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:text="win_or_lose"
+        android:gravity="top|center" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_weight="1"
-        android:gravity="top|center" />
-
-    <TextView
-        android:id="@+id/buffett_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_weight="1"
         android:gravity="bottom|center"
         android:text="Buffett's Score" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
         android:textColor="@color/white"
         android:gravity="center|center"
-        android:text="2000000 $"/>
+        android:text="3800000 $"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:onClick="Home"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:text="Home" />
 
 </LinearLayout>
