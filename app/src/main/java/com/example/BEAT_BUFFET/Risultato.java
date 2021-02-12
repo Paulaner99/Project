@@ -37,8 +37,6 @@ public class Risultato extends AppCompatActivity {
             final_result.setText(R.string.win);
         } else { final_result.setText(R.string.lose); }
 
-
-        //Salvataggio High-Score
         String s = "";
 
         try{
@@ -55,6 +53,7 @@ public class Risultato extends AppCompatActivity {
             inputReader.close();
         } catch (Exception e) { e.printStackTrace(); }
 
+        if(s.equals("")){s = "0";}
         if( Float.parseFloat(text_cash.getText().toString()) > Float.parseFloat(s)) {
 
             try {
