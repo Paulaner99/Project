@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project">
+    package="com.example.BEAT_BUFFET">
 
     <application
         android:allowBackup="true"
@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
-        <activity android:name=".Risultato"></activity>
-        <activity android:name=".Choice2005" />
-        <activity android:name=".Choise2015" />
-        <activity android:name=".Choise2010" />
-        <activity android:name=".Choice2000" />
-        <activity android:name=".Instructions" />
-        <activity android:name=".Choice1" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.BEAT_BUFFET.Risultato"></activity>
+        <activity android:name="com.example.BEAT_BUFFET.Choice2005" />
+        <activity android:name="com.example.BEAT_BUFFET.Choise2015" />
+        <activity android:name="com.example.BEAT_BUFFET.Choise2010" />
+        <activity android:name="com.example.BEAT_BUFFET.Choice2000" />
+        <activity android:name="com.example.BEAT_BUFFET.Instructions" />
+        <activity android:name="com.example.BEAT_BUFFET.Choice1" />
+        <activity android:name="com.example.BEAT_BUFFET.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

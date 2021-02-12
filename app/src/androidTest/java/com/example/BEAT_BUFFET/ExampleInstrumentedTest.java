@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.BEAT_BUFFET;
 
 import android.content.Context;
 
