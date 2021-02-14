@@ -16,7 +16,7 @@ import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Choice2000 extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.example.project.MESSAGE";
+    public static final String EXTRA_MESSAGE = "com.example.BEAT_BUFFET.MESSAGE";
     TextView text_cash;
     RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4;
     float guadagno;
