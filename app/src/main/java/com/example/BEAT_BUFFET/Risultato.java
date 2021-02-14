@@ -16,11 +16,13 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+import static com.example.BEAT_BUFFET.MainActivity.msec;
 import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Risultato extends AppCompatActivity {
 
     static final int READ_BLOCK_SIZE = 100;
+    boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +74,27 @@ public class Risultato extends AppCompatActivity {
 
     public void Home(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        change_act = true;
         music.stop();
         startActivity(intent);
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        if(change_act == false){
+            msec = music.getCurrentPosition();
+            music.stop();
+        }
+    }
 
+    protected void onRestart(){
+        super.onRestart();
+        try {
+            music.prepare();
+        } catch (Exception e){ e.printStackTrace(); }
+        music.seekTo(msec);
+        music.start();
+        change_act = false;
+    }
 }

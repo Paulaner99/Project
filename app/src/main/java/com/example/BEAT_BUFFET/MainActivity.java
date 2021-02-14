@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     static final int READ_BLOCK_SIZE = 100;
     TextView high_score;
     public static MediaPlayer music;
+    public static int msec;
+    boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -48,8 +50,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void instructions(View view){
         Intent intent = new Intent(this, Instructions.class);
+        change_act = true;
         startActivity(intent);
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        if(change_act == false){
+            msec = music.getCurrentPosition();
+            music.stop();
+        }
+    }
 
+    protected void onRestart(){
+        super.onRestart();
+        try {
+            music.prepare();
+        } catch (Exception e){ e.printStackTrace(); }
+        music.seekTo(msec);
+        music.start();
+        change_act = false;
+    }
 }

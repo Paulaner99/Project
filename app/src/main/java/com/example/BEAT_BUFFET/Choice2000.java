@@ -11,6 +11,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.BEAT_BUFFET.MainActivity.msec;
+import static com.example.BEAT_BUFFET.MainActivity.music;
+
 public class Choice2000 extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.project.MESSAGE";
@@ -23,6 +26,7 @@ public class Choice2000 extends AppCompatActivity {
     float g1, g2, g3, g4;
     float c1, c2, c3, c4;
     int p1, p2, p3,p4;
+    boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,25 @@ public class Choice2000 extends AppCompatActivity {
         value_cash = Float.parseFloat(text_cash.getText().toString());
         cash = value_cash;
         guadagno = 0.0f;
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        if(change_act == false){
+            msec = music.getCurrentPosition();
+            music.stop();
+        }
+    }
+
+    protected void onRestart(){
+        super.onRestart();
+        try {
+            music.prepare();
+        } catch (Exception e){ e.printStackTrace(); }
+        music.seekTo(msec);
+        music.start();
+        change_act = false;
     }
 
 
@@ -58,6 +81,7 @@ public class Choice2000 extends AppCompatActivity {
         {
             Intent intent = new Intent(this, Choice2005.class);
             intent.putExtra(EXTRA_MESSAGE, String.valueOf(sum));
+            change_act = true;
             startActivity(intent);
         }
     }
