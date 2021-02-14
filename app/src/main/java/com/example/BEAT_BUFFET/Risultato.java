@@ -9,11 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+
+import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Risultato extends AppCompatActivity {
 
@@ -62,15 +65,14 @@ public class Risultato extends AppCompatActivity {
                 outputWriter.write(text_cash.getText().toString());
                 outputWriter.close();
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            } catch (Exception e) { e.printStackTrace(); }
         }
 
     }
 
     public void Home(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        music.stop();
         startActivity(intent);
     }
 

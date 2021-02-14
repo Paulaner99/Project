@@ -15,14 +15,15 @@ public class MainActivity extends AppCompatActivity {
 
     static final int READ_BLOCK_SIZE = 100;
     TextView high_score;
+    public static MediaPlayer music;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MediaPlayer music= MediaPlayer.create(MainActivity.this,R.raw.music1);
+        music= MediaPlayer.create(MainActivity.this,R.raw.music1);
+        music.setLooping(true);
         music.start();
-
 
         //Lettura High-Score
 
@@ -49,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Instructions.class);
         startActivity(intent);
     }
+
 
 }

@@ -16,6 +16,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:gravity="center|center"
+        style="@style/shadoweffect"
         android:text="Final Score" />
 
     <LinearLayout
@@ -40,6 +41,7 @@
             android:textSize="30sp"
             android:textColor="@color/white"
             android:gravity="center"
+            style="@style/shadoweffect"
             android:text="0"/>
 
         <TextView
@@ -48,6 +50,7 @@
             android:textSize="30sp"
             android:textColor="@color/white"
             android:gravity="left"
+            style="@style/shadoweffect"
             android:text=" $"/>
 
         <TextView
@@ -70,6 +73,7 @@
         android:textStyle="bold"
         android:layout_weight="1"
         android:text="win_or_lose"
+        style="@style/shadoweffect"
         android:gravity="top|center" />
 
     <TextView
@@ -79,6 +83,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:gravity="bottom|center"
+        style="@style/shadoweffect"
         android:text="Buffett's Score" />
 
     <TextView
@@ -87,6 +92,7 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:gravity="center|center"
+        style="@style/shadoweffect"
         android:text="3800000 $"/>
 
     <Button
