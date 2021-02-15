@@ -15,16 +15,16 @@ import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Choice2005 extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.example.BEAT_BUFFET.MESSAGE";
-    RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4;
-    float guadagno;
-    float cash;
-    float value_cash;
-    int percentuale;
-    float g1, g2, g3, g4;
-    float c1, c2, c3, c4;
-    int p1, p2, p3, p4;
-    boolean change_act = false;
+    public final static String EXTRA_MESSAGE = "com.example.BEAT_BUFFET.MESSAGE";
+    private RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4;
+    private float guadagno;
+    private float cash;
+    private float value_cash;
+    private int percentuale;
+    private float g1, g2, g3, g4;
+    private float c1, c2, c3, c4;
+    private int p1, p2, p3, p4;
+    private boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

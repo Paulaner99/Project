@@ -21,8 +21,8 @@ import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Risultato extends AppCompatActivity {
 
-    static final int READ_BLOCK_SIZE = 100;
-    boolean change_act = false;
+    final static int READ_BLOCK_SIZE = 100;
+    private boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

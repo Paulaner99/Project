@@ -13,11 +13,11 @@ import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity {
 
-    static final int READ_BLOCK_SIZE = 100;
-    TextView high_score;
-    public static MediaPlayer music;
-    public static int msec;
-    boolean change_act = false;
+    final static int READ_BLOCK_SIZE = 100;
+    protected static MediaPlayer music;
+    protected static int msec;
+    private boolean change_act = false;
+    private TextView high_score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {

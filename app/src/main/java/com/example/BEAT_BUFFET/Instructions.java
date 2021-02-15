@@ -12,7 +12,7 @@ import static com.example.BEAT_BUFFET.MainActivity.music;
 
 public class Instructions extends AppCompatActivity {
 
-    boolean change_act = false;
+    private boolean change_act = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
