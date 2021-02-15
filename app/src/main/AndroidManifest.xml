@@ -15,7 +15,6 @@
         <activity android:name="com.example.BEAT_BUFFET.Choise2010" />
         <activity android:name="com.example.BEAT_BUFFET.Choice2000" />
         <activity android:name="com.example.BEAT_BUFFET.Instructions" />
-        <activity android:name="com.example.BEAT_BUFFET.Choice1" />
         <activity android:name="com.example.BEAT_BUFFET.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
